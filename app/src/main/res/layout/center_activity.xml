@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/raw_1500865218"
+    tools:context="lei.com.yulei.quarter.Personalworkscentre.Centre_view.Center_Activity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:background="#0184fe"
+    android:id="@+id/relativeLayout"></RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="27dp"
+        app:srcCompat="@drawable/raw_1500369941" />
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="37dp"
+        app:srcCompat="@drawable/raw_1501128125"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_toEndOf="@+id/name_text" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView10"
+        android:layout_marginEnd="7dp"
+        app:srcCompat="@drawable/raw_1500630933" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="41dp"
+        android:background="#fff"
+        android:layout_alignTop="@+id/imageView12"
+        android:layout_alignParentStart="true">
+
+    </RelativeLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageView12"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="65dp"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/imageView8"
+        android:layout_toStartOf="@+id/name_text" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:text="作品"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="关注"
+        android:gravity="center"
+        android:textColor="#4884e6"
+        android:textSize="32sp"
+        android:layout_alignTop="@+id/relativeLayout2"
+        android:layout_toEndOf="@+id/imageView12"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:background="#d1d1d1" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/center_Rlv"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentStart="true"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/ader_sdv2"
+        android:layout_width="90dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/ader_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textxxxx"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ader_sdv2"
+        android:layout_marginTop="19dp" />
+    <TextView
+        android:id="@+id/ader_riqi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xxxxxxx"
+        android:layout_below="@+id/ader_name2"
+        android:layout_alignEnd="@+id/ader_name2"
+        android:layout_marginTop="21dp" />
+</RelativeLayout>
+    <TextView
+        android:id="@+id/ader_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xxxx"
+        android:textSize="24sp"/>
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/ader_fm"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+</LinearLayout>
